@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webb1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <style type="text/css">
+      @media screen and (max-width: 767px) {
+        #main-nav > div > #imgNavbar > a > img {
+          margin-left: 90px;
+        }
+
+        #menu-nav > .container > .row {
+          margin: 0px;
+        }
+
+        #quick-nav-items {
+          height: auto;
+        }
+        
+        #quick-nav-items > div > ul {
+          margin-left: 30px;
+        }
+
+        #quick-link > .container-fluid >.navbar-header {
+          margin-left: 50px;
+        }
+
+        #footer > .footer-bottom > .container > #footer-nav > #footer-side {
+          margin-left: 55px;
+        }
+
+        #footer > .footer-bottom > .container > #footer-nav > #footer-logo {
+          margin-left: 40px;
+        }
+
+        #myTab > #tab1 {
+          width: 300px;
+        }
+
+        #main-content > #sub-low > .sub-con {
+          width: 400px;
+        }
+
+        #main-content > #sub-low > .sub-con > img{
+          width: 400px;
+        }
+
+        #quick-link1 {
+          width: 100%;
+        }
+
+        /*#main-content > #sub-low > .sub-con1 {
+          width: 400px;
+        }*/
+      }
+    </style>
+
+    
+  </head>
+  <body>
+  
+    <%= yield %>
+  </body>
+</html>
